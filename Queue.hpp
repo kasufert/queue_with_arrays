@@ -14,7 +14,7 @@ class Queue
         }
     }
 public:
-    Deque()
+    Queue()
     : rear(), head()
     {}
 
