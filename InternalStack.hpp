@@ -53,6 +53,7 @@ public:
         {
             arr[i] = arr[i+1];
         }
+        --count;
         return item;
     }
     T peek_bottom()
