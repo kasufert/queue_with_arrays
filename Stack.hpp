@@ -2,7 +2,7 @@
 template<typename T>
 class Stack
 {
-        T* arr;
+    T* arr;
     int size;
     int count;
     void resize()
@@ -31,13 +31,13 @@ public:
         if (count >= size)
             resize();
 
-        arr[count] = item;
+        arr[count] = std::move(item);
         ++count;
     }
     T pop()
     {
         --count;
-        return arr[count];
+        return std::move(arr[count]);
     }
     T top()const
     {
